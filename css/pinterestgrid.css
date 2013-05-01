@@ -1,0 +1,96 @@
+/* Reset
+----------------------------------------*/
+body {
+  background-image: url(../img/bg-gray.png);
+  color: #333;
+  font-family: Chivo, Helvetica, serif;
+  font-size: 15px;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+a {
+  color: #35BFFF;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #91DCFF;
+}
+
+/* Global header
+----------------------------------------*/
+.global-header {
+  background: #faf7f7;
+  border-bottom: 1px solid #cfcaca;
+  box-shadow: 0 1px 1px rgba(58, 58, 58, 0.2);
+  padding: 10px;
+}
+.global-header h1 {
+  color: #d43638;
+  font-family: "Donegal One", serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+}
+.global-header .masthead {
+  float: right;
+  margin: 4px 10px 6px;
+}
+.global-header .btn-pill {
+  border: 1px solid #e6d8d8;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  font-size: 18px;
+  padding: 0 15px;
+}
+.global-header .btn-pill:hover {
+  background: #f0e7e7;
+  color: #fa3599;
+}
+
+/* pinterest grid
+----------------------------------------*/
+#container {
+  margin: 0 auto 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.grid {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  float: left;
+  font-size: 12px;
+  margin: 8px;
+  min-height: 100px;
+  padding: 15px;
+  width: 188px;
+  -webkit-transition: top 1s ease, left 1s ease;
+  -moz-transition: top 1s ease, left 1s ease;
+  -o-transition: top 1s ease, left 1s ease;
+  transition: top 1s ease, left 1s ease;
+}
+.grid h2 {
+  color: #fa3599;
+  display: block;
+  font-family: "Donegal One", serif;
+  font-size: 17px;
+  margin: 10px 0;
+  padding: 0 0 5px;
+}
+.grid .meta {
+  color: #777;
+  font-style: italic;
+  text-align: right;
+}
+.grid .imgholder img {
+  background: #ccc;
+  display: block;
+  max-width: 100%;
+}

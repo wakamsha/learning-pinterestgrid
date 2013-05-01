@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import "compass";
+
+// Variables
+// ----------------------------------------
+$SWEETS:                    #fa3599;
+$pinterestRed:              #D43638;
+$globalHeaderBackground:    #FAF7F7;
+$baseFontFamily:            Chivo, Helvetica, serif;
+
+
+/* Reset
+----------------------------------------*/
+body{
+	background-image: url(../img/bg-gray.png);
+	color:#333;
+	font-family: $baseFontFamily;
+	font-size:15px;
+	margin:0;
+	overflow-x:hidden;
+	padding:0;
+}
+a {
+	color:#35BFFF;
+	text-decoration:none;
+
+	&:hover,
+	&:active {
+		color:#91DCFF;
+	}
+}
+
+
+/* Global header
+----------------------------------------*/
+.global-header {
+	background: $globalHeaderBackground;
+	border-bottom: 1px solid #CFCACA;
+	box-shadow: 0 1px 1px rgba(58, 58, 58, .2);
+	padding: 10px;
+
+	h1 {
+		color: $pinterestRed;
+		font-family: 'Donegal One', serif;
+		font-size: 20px;
+		line-height: 20px;
+		margin: 0;
+		text-align: center;
+		text-overflow: ellipsis;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+		white-space: nowrap;
+	}
+
+	.masthead {
+		float: right;
+		margin: 4px 10px 6px;
+	}
+
+	.btn-pill {
+		border: 1px solid adjust-lightness($globalHeaderBackground, -10);
+		border-radius: 2px;
+		display: block;
+		float: left;
+		font-size: 18px;
+		padding: 0 15px;
+
+		&:hover {
+			background: adjust-lightness($globalHeaderBackground, -5);
+			color: $SWEETS;
+		}
+	}
+}
+
+
+/* pinterest grid
+----------------------------------------*/
+#container{
+	margin:0 auto 25px;
+	position:relative;
+	padding-bottom: 10px;
+}
+.grid{
+	background:#fff;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	float:left;
+	font-size:12px;
+	margin:8px;
+	min-height:100px;
+	padding: 15px;
+	width:188px;
+	@include transition(top 1s ease, left 1s ease);
+
+	h2 {
+		color: $SWEETS;
+		display:block;
+		font-family: 'Donegal One', serif;
+		font-size:17px;
+		margin:10px 0;
+		padding:0 0 5px;
+	}
+	.meta{
+		color:#777;
+		font-style:italic;
+		text-align:right;
+	}
+	.imgholder {
+		img{
+			background:#ccc;
+			display:block;
+			max-width:100%;
+		}
+	}
+}
