@@ -106,8 +106,12 @@ a {
 	.imgholder {
 		img{
 			background:#ccc;
-			display:block;
+			display:inline-block;
 			max-width:100%;
+
+			+ img {
+				margin-left: 31px;
+			}
 		}
 	}
 }
