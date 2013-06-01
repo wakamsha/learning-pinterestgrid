@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset
 ----------------------------------------*/
 body {
@@ -91,6 +92,9 @@ a:hover, a:active {
 }
 .grid .imgholder img {
   background: #ccc;
-  display: block;
+  display: inline-block;
   max-width: 100%;
+}
+.grid .imgholder img + img {
+  margin-left: 31px;
 }
